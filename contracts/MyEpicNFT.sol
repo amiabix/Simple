@@ -26,7 +26,7 @@ contract MyEpicNFT is ERC721URIStorage {
 
   function pickRandomFirstWord(uint256 tokenId) public view returns (string memory) {
     uint256 rand = random(string(abi.encodePacked("FIRST_WORD", Strings.toString(tokenId))));
-    rand = rand % firstWords.length;
+    rand = rand % firstWords.length; 
     return firstWords[rand];
   }
 

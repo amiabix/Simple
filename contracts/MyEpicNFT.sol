@@ -16,7 +16,7 @@ contract MyEpicNFT is ERC721URIStorage {
   string baseSvg = "<svg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='xMinYMin meet' viewBox='0 0 350 350'><style>.base { fill: white; font-family: serif; font-size: 24px; }</style><rect width='100%' height='100%' fill='black' /><text x='50%' y='50%' class='base' dominant-baseline='middle' text-anchor='middle'>";
 
   string[] firstWords = ["Ayush", "Aman", "Hrishabh", "Onec", "Ujjwal"];
-  string[] secondWords = ["dine", "fine", "line", "nice", "drama", "fun"];
+  string[] secondWords = ["dine", "demo", "public", "nice", "drama", "fun"];
   string[] thirdWords = ["Naruto", "saske", "sakura", "Boruto", "saitama", "senju"];
 
 
@@ -81,6 +81,7 @@ contract MyEpicNFT is ERC721URIStorage {
     console.log("\n--------------------");
     console.log(finalTokenUri);
     console.log("--------------------\n");
+ 
 
     _safeMint(msg.sender, newItemId);
     
